@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+                /* text proprty */
+                width: 95vw;
+                margin: auto;
+            text-align: justify;
+            font-weight: 400;
+            font-size: larger;
+            line-height: 1.2;
+
+
+            /* background:aqua; */
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 30%;
+            grid-template-rows: 5%  1fr 1fr 5%;
+            grid-template-areas: 
+            " hd hd " 
+            " main side "
+            "main side"
+            "foot foot ";
+            gap: 10px;
+        }
+        h2{
+            font-size: 3rem;
+        }
+        h3{
+            font-size: xx-large;
+        }
+        .header{
+            text-align: center;
+            grid-area: hd;
+        }
+        .side{
+            grid-area: side;
+            display: flex;
+            flex-direction: column;
+             align-items: flex-start; 
+            /* justify-content: space-around;  */
+            gap: 10%;
+            padding: 2%;
+        }
+        .main{
+            grid-area: main;
+            padding: 2%;
+        }
+        .foot{
+            /* background-color: black; */
+            /* position: fixed; */
+            grid-area: foot;
+            margin: 3%;
+        }
+        .box{
+            /* background-color: blueviolet; */
+        }
+        .border{
+            border: 1px solid black;
+            padding: 1rem 0 0 1rem;
+           
+            height: 5%; 
+        }
+        .block{
+            display: block;
+        }
+        .about{ 
+            padding-left: 5%;
+            text-align: center;
+            text-align: justify;
+            background-color: #eeecec;
+        }
+        button{
+            width:150px;
+             height:60px;
+             border-radius:30px;
+             font-size:20px;
+
+        }
+        .oldbtn{
+             color:rgb(11, 3, 60); 
+             border:1px solid rgb(48, 46, 113);
+
+        }
+        .oldbtn:hover{
+            background-color: aqua;
+        }
+        .newbtn:hover{
+            background-color: yellowgreen;
+        }
+
+        .newbtn{ 
+
+
+            /* hastecode */
+            
+             color:grey;
+             background-color:white;
+             border:1px solid grey;
+             margin-right:15px; 
+             margin-top:-25%;
+    }
+    </style>
+
+
+</head>
+<body>
+    
+    <div id="wrapper">
+
+        <div class="container">
+            <div class="header"> 
+                <h1>Blog Heading</h1>
+            </div>
+            <div class="box main"> 
+                <h2>Sample blog Post</h2>
+                <span class="date">January 1,2014 by <a href="">Mark</a></span>
+                 <p>This blog shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+                 <hr>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dignissimos velit delectus accusantium nulla dolor omnis facere odit ab est.</p>
+
+                 <div class="border">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam corporis quibusdam voluptate!</div>
+                      
+                 <h2>Heading</h2>
+
+                 <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quia recusandae quam odio asperiores iusto. Tempora alias fuga eligendi ex a sint laboriosam porro quis.</p>
+
+
+                    <h3>sub heading</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ad necessitatibus beatae?</p>
+
+                    <div class="border">Lorem ipsum dolor, sit amet uptate!</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam expedita saepe et animi tempore, deserunt dolore, sit tempora ut nulla iure quo, consequuntur amet.</p>
+
+                    <h3>sub heading 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odio animi veniam, iure nam expedita delectus adipisci nulla provident illo accusantium deleniti autem inventore, ad sit doloremque amet corporis rem perferendis a!</p>
+
+                    <ul>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, rerum?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.
+
+                        </li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore praesentium et ducimus.</p>
+
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet.
+
+                        </li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ol>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore aut nobis nisi, nostru !</p>
+
+
+
+                      
+
+
+
+
+
+
+
+            </div>
+           
+           
+           
+           
+           
+           
+           <!-- sidebar code  -->
+           
+           
+           
+            <div class="box side">
+
+                <div class="about">
+                    <h3>About</h3>
+            
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iure dolorum nemo quis, voluptate veritatis quod iste doloremque consequuntur cupiditate eius officia quia earum aut!</div>
+                <div class="box">
+                    <h3>Archives</h3>
+
+                    <a class="block"   href=""> March 2014  </a>
+                    <a class="block"   href="">October 2013 </a>
+                    <a class="block"   href=""> September 2013  </a>
+                    <a class="block"   href="">August 2013  </a>
+                    <a class="block"   href=""> July 2013
+                    </a>
+                    <a class="block"   href="">   June 2013  </a>
+                    <a class="block"   href=""> May 2013
+                    </a>
+                    <a class="block"   href="">  April 2013  </a> 
+                     
+                   
+                    
+                    
+                   
+                </div>
+                <div class="box">
+                    <h3>Elsewhere</h3>
+                   
+                    <a class="block"   href=""> GitHub </a> 
+                    <a class="block"   href="">   Twitter  </a> 
+                    <a class="block"   href="">    Facebook  </a> 
+                   
+                   
+                    
+                   
+                </div>
+            </div>
+
+
+
+            <div class="box foot ">
+                <button class="oldbtn">older Post</button>
+                <button class="newbtn">Newer Post</button>
+                 </div>
+        </div>
+    </div>
+</body>
+</html>
